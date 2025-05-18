@@ -1,0 +1,28 @@
+/* Estilos para el pop-up centrado dentro del mapa */
+#popup {
+    display: none;
+    position: fixed; /* Posiciona el pop-up fijo en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado en la pantalla */
+    background-color: white;
+    padding: 30px; /* Aumentamos el padding para dar más espacio interno */
+    border: 2px solid black;
+    z-index: 10;
+    width: 800px; /* Ancho del cuadro de mensaje */
+    height: auto; /* Altura automática según el contenido */
+    font-size: 40px; /* Tamaño del texto en el pop-up */
+    text-align: center; /* Opcional: alinear el texto en el centro */
+}
+
+/* Fondo oscuro cuando el pop-up esté visible dentro del mapa */
+#overlay {
+    display: none;
+    position: fixed; /* Posicionamos el overlay cubriendo toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9; /* Se asegura de estar detrás del pop-up */
+}
